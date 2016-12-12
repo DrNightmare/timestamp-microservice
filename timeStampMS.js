@@ -24,7 +24,7 @@ app.get('/:timeStamp', function(req, res) {
 	res.send({"unix" : unixTime, "natural" : naturalTime});
 });
 
-app.listen('3000', function(err, data) {
+app.listen(process.env.PORT || 5000, function(err, data) {
 	if (err) console.log(err);
-	console.log("Microservice running at port 3000");
+	console.log("Microservice running at port 5000");
 })
