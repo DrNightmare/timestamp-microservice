@@ -26,4 +26,5 @@ app.get('/:timeStamp', function(req, res) {
 
 app.listen('3000', function(err, data) {
 	if (err) console.log(err);
+	console.log("Microservice running at port 3000");
 })
